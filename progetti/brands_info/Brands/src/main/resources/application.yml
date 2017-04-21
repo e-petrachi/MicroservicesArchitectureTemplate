@@ -1,0 +1,10 @@
+# application.yml 
+--- 
+spring: 
+  application: 
+    name: brands
+brandsinfo: 
+  famous.uri: http://localhost:8081/S1
+  sales.uri: http://localhost:8082/S2
+server:
+  port: 8080
