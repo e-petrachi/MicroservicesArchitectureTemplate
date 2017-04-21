@@ -6,9 +6,8 @@ a Roma Tre,
 edizione 2017 (A.A. 2016-2017),
 tenuto dal prof. [Luca Cabibbo](http://cabibbo.dia.uniroma3.it/).
 
-Questo repository contiene il codice del *progetto*
-del corso di [Architettura dei Sistemi Software](http://cabibbo.dia.uniroma3.it/asw/),
-relativo a delle semplici *applicazioni software distribuite*
+Questo repository contiene il codice dei *progetti*
+relativi a delle semplici *applicazioni software distribuite*
 (basate sull'uso di *middleware*),
 che vanno eseguite in degli opportuni *ambienti distribuiti*:
 * il software è normalmente scritto in [Java](http://www.oracle.com/technetwork/java/index.html),
@@ -53,7 +52,7 @@ Questo repository è organizzato in diverse sezioni (cartelle):
 Per effettuare il download del repository, usare il seguente comando Git
 dalla cartella locale in cui si vuole scaricare il repository:
 
-    git clone https://github.com/?
+    git clone https://github.com/e-petrachi/projects-ASW
 
 Per aggiornare il contenuto della propria copia locale del repository,
 usare il seguente comando Git dalla cartella locale in cui è stato scaricato il repository:

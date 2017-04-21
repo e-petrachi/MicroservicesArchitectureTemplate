@@ -2,6 +2,7 @@
 *.zip
 *.tar.gz
 *.class
+*.vagrant
 .project
 .metadata
 .settings/
