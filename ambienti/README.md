@@ -49,18 +49,5 @@ E' anche possibile:
 ## Ambienti 
 
 * [developer](developer/)
-  per la compilazione e l'assemblaggio (build) dei progetti definiti nella cartella [projects/](../projects/) del repository 
+  per la compilazione e l'assemblaggio (build) dei progetti definiti nella cartella [progetti/](../progetti/) del repository 
 
-* [standalone](standalone/)
-  l'ambiente più semplice, per l'esecuzione di applicazioni Java non distribuite 
-
-* [client-server](client-server/) 
-  per l'esecuzione di applicazioni Java distribuite di tipo client-server 
-
-<!---
-* [java-ee](java-ee/) 
-  per l'esecuzione di applicazioni Java EE con l'application server *GlassFish*  
-  
-* [docker](docker/) 
-  per la gestione e l'esecuzione di contenitori *Docker*  
---> 
