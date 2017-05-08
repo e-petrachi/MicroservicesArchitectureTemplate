@@ -47,4 +47,4 @@ ed è descritta nell'ambito dei singoli progetti.
 
 ## Progetti
 
-* [brands-info](/brands-info/): un semplice progetto con l'uso di [Spring Boot](https://projects.spring.io/spring-boot/)
+* [brands-info](../progetti/brands-info/): un semplice progetto con l'uso di [Spring Boot](https://projects.spring.io/spring-boot/)
