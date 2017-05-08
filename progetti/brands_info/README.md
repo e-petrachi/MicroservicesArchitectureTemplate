@@ -15,6 +15,11 @@ e la loro costruzione ed esecuzione è descritta qui di seguito.
 ### Build  
 
 La costruzione delle applicazioni viene fatta automaticamente con la creazione del nodo **dev**.
+In particolare aprire una finestra terminale e posizionarsi nella directory **developer** del nodo **dev** ed eseguire il comando:
+
+      vagrant up
+
+Una volta avviata la macchina virtuale **dev** attendere alcuni minuti l'avvio automatico dei servizi.
 
 ### Ambiente di esecuzione
 
