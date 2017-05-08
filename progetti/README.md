@@ -17,8 +17,7 @@ definito nella cartella [ambienti/](../ambienti/) del repository.
 
 Ciascun **progetto** contiene (come sotto-cartelle) una o più **applicazioni distribuite**.
 Ogni applicazione distribuita è composta da uno o più **moduli**,
-che danno luogo a uno o più **componenti eseguibili** dell'applicazione
-(per esempio, un *client* e un *server*).
+che danno luogo a uno o più **componenti eseguibili** dell'applicazione.
 In generale, ogni applicazione va eseguita in un **ambiente di esecuzione** opportuno,
 e in particolare ogni componente eseguibile dell'applicazione
 va eseguito in una macchina virtuale opportuna dell'ambiente.
@@ -28,34 +27,7 @@ Queste informazioni sono descritte nell'ambito di ciascun progetto.
 ## Build  
 
 La costruzione (build, ovvero compilazione e assemblaggio) delle applicazioni
-va fatta applicazione per applicazione,
-utilizzando **Gradle**.
-
-Per compilare un'applicazione bisogna:
-
-1. collegarsi con `vagrant ssh` alla macchina virtuale **dev**
-   dell'ambiente [developer](../ambienti/developer/), su cui sono installati *Java SDK* e *Gradle*
-
-2. posizionarsi nella cartella principale dell'applicazione di interesse
-
-3. per compilare e assemblare l'applicazione, usare il comando `gradle build`
-
-In alternativa, è possibile compilare un'applicazione sul proprio PC
-
-1. installare e configurare *Java SDK*
-
-2. installare e configurare *Gradle*
-
-3. usare una shell del proprio PC
-
-4. posizionarsi nella cartella principale dell'applicazione di interesse
-
-5. per compilare e assemblare l'applicazione, usare il comando `gradle build`
-
-E' anche possibile:
-
-* ripulire la build di un'applicazione, con il comando `gradle clean`
-
+viene fatta in automatico alla creazione del nodo relativo utilizzando **Gradle**.
 
 ## Esecuzione
 
@@ -75,4 +47,4 @@ ed è descritta nell'ambito dei singoli progetti.
 
 ## Progetti
 
-* [brands-info](brands-info/): un semplice progetto con l'uso di [Spring Boot](https://projects.spring.io/spring-boot/) 
+* [brands-info](brands-info/): un semplice progetto con l'uso di [Spring Boot](https://projects.spring.io/spring-boot/)

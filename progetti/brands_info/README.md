@@ -17,12 +17,6 @@ e la loro costruzione ed esecuzione è descritta qui di seguito.
 Per la costruzione di ciascuna applicazione, vedere le istruzioni
 descritte nella sezione [progetti/](../).
 
-In pratica, per compilare e assemblare ciascuna applicazione, bisogna
-
-1. posizionarsi nella cartella principale dell'applicazione di interesse - ad esempio `~/progetti/brands_info/Brands`
-
-2. per compilare e assemblare l'applicazione, usare il comando `gradle build`
-
 ### Ambiente di esecuzione
 
 Ciascuna di queste applicazioni può essere eseguita direttamente nell'ambiente
@@ -32,10 +26,5 @@ vengono anche pubblicate sulla porta **8088** dell'host.
 
 #### Esecuzione dell'applicazione
 
-In terminali diversi, fare quanto segue:
-
-* nella cartella principale del servizio **BrandsFamous** eseguire lo script `../run-brands-famous.sh`
-
-* nella cartella principale del servizio **BrandsSales** eseguire lo script `../run-brands-sales.sh`
-
-* nella cartella principale del servizio **Brands** eseguire lo script `../run-brands.sh`
+Le macchine vengono eseguite in coda alla creazione del nodo **dev** e dopo alcuni minuti sono disponibili.
+Su qualsiasi browser collegarsi al URL di localhost sulla porta 8088.
