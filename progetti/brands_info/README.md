@@ -19,12 +19,16 @@ La costruzione delle applicazioni viene fatta automaticamente con la creazione d
 In particolare aprire una finestra terminale e posizionarsi nella directory **developer** del nodo **dev** ad esempio come:
 
       cd projects-ASW/ambienti/developer
-      
+
 E dopo eseguire il comando:
 
       vagrant up
 
 Una volta avviata la macchina virtuale **dev** attendere alcuni minuti l'avvio automatico dei servizi.
+
+Al termine dell'esecuzione eseguire lo stop del nodo **dev** con il comando:
+
+      vagrant halt dev
 
 ### Ambiente di esecuzione
 
