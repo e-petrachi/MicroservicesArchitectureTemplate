@@ -32,7 +32,7 @@ viene fatta in automatico alla creazione del nodo relativo utilizzando **Gradle*
 ## Esecuzione
 
 Il risultato della costruzione di un'applicazione
-+ in generale composto da uno o più **componenti eseguibili**,
+in generale composto da uno o più **componenti eseguibili**,
 che dopo la costruzione sono disponibili nella cartella **dist** dell'applicazione,
 che in particolare conterrà una sotto-cartella per ciascun componente eseguibile dell'applicazione,
 contenente i file *jar* dell'applicazione, eventuali file di configurazione,
