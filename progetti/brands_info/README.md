@@ -26,4 +26,4 @@ vengono anche pubblicate sulla porta **8088** dell'host.
 #### Esecuzione dell'applicazione
 
 Le macchine vengono eseguite in coda alla creazione del nodo **dev** e dopo alcuni minuti sono disponibili.
-Su qualsiasi browser collegarsi al URL di localhost sulla porta 8088.
+Su qualsiasi browser collegarsi al [URL](http://localhost:8088/) di **localhost** sulla porta **8088**.
