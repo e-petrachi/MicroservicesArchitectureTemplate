@@ -14,8 +14,7 @@ e la loro costruzione ed esecuzione è descritta qui di seguito.
 
 ### Build  
 
-Per la costruzione di ciascuna applicazione, vedere le istruzioni
-descritte nella sezione [progetti/](../).
+La costruzione delle applicazioni viene fatta automaticamente con la creazione del nodo **dev**.
 
 ### Ambiente di esecuzione
 
