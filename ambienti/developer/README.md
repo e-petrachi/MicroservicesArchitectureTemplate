@@ -1,6 +1,6 @@
 # Developer
 
-Questo � un ambiente di esecuzione pensato per la compilazione dei progetti.
+Questo è un ambiente di esecuzione pensato per la compilazione dei progetti.
 E' composto da una sola macchina virtuale **dev** (*developer*).
 
 ## Descrizione delle macchine virtuali
@@ -27,4 +27,4 @@ Hardware (virtuale)
 
 * Memoria: 4096 MB (4 GB)
 
-* Virtual CPU: 2 
+* Virtual CPU: 2

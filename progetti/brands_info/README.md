@@ -35,7 +35,9 @@ Al termine dell'esecuzione eseguire lo stop del nodo **dev** con il comando:
 Ciascuna di queste applicazioni può essere eseguita direttamente nell'ambiente
 [developer](../../ambienti/developer/), sul nodo **dev**.
 In questo modo, le applicazioni web che espongono servizi alla porta **8080** del nodo **dev**
-vengono anche pubblicate sulla porta **8088** dell'host.
+vengono anche pubblicate sulla porta **8088** dell'host, quelle che espongono servizi alla porta **8081** del nodo **dev**
+vengono anche pubblicate sulla porta **8081** dell'host e quelle che espongono servizi alla porta **8082** del nodo **dev**
+vengono anche pubblicate sulla porta **8082** dell'host.
 
 #### Esecuzione dell'applicazione
 
