@@ -34,31 +34,34 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           node.vm.network "private_network", ip: "10.11.1.51", virtualbox__intnet: true
 
           node.vm.provider "virtualbox" do |v|
-              # queste risorse dovrebbero bastare nella maggior parte dei casi
-  			v.memory = 1536
-  			v.cpus = 1
-  			# tranne il caso in cui si vogliono lanciare piu' applicazioni Spring
-              # v.memory = 4096
-              # v.cpus = 2
+               v.memory = 4096
+               v.cpus = 2
           end
 
-          node.vm.network "forwarded_port", guest: 22, host: 2222, id: 'ssh', host_ip: "localhost", auto_correct: true
+          node.vm.network "forwarded_port", guest: 22, host: 2222, id: 'ssh', auto_correct: true
           node.ssh.forward_agent = true
 
-          # talvolta può essere utile pubblicare la porta 8080 di dev (su 8088)
-          node.vm.network "forwarded_port", guest: 8080, host: 8088, id: 'http', host_ip: "localhost", auto_correct: true
+          # porte
+          node.vm.network "forwarded_port", guest: 8080, host: 8088, id: 'http', auto_correct: true
+          node.vm.network "forwarded_port", guest: 8081, host: 8081, id: 'http1', auto_correct: true
+          node.vm.network "forwarded_port", guest: 8082, host: 8082, id: 'http2', auto_correct: true
 
           # provisioning con bash
           node.vm.provision :shell, :inline => 'apt-get update'
           node.vm.provision :shell, path: "../shared/scripts/setup-java.sh"
           node.vm.provision :shell, path: "../shared/scripts/setup-gradle.sh"
           node.vm.provision :shell, path: "../shared/scripts/setup-maven.sh"
+
+          node.vm.provision :shell,
+              inline: "echo  'configurazione nodo developer completata'"
+
           node.vm.provision :shell, run: "always", path: "../shared/scripts/startup1.sh"
           node.vm.provision :shell, run: "always", path: "../shared/scripts/startup2.sh"
           node.vm.provision :shell, run: "always", path: "../shared/scripts/startup3.sh"
 
-          node.vm.provision :shell,
-              inline: "echo  'configurazione nodo developer completata'"
+          node.vm.provision :shell, run: "always",
+              inline: "echo  'Lancio delle applicazioni Gradle ...' && sleep 1m &&
+              echo '...' && sleep 1m && echo '...' && sleep 1m && echo 'Caricamento completato!'"
 
       end
 
