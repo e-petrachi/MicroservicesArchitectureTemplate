@@ -37,14 +37,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                v.memory = 4096
                v.cpus = 2
           end
-
-          node.vm.network "forwarded_port", guest: 22, host: 2222, id: 'ssh', auto_correct: true
+          # in windows va abilitato campo  host_ip: "localhost"
+          node.vm.network "forwarded_port", guest: 22, host: 2222, id: 'ssh', host_ip: "localhost",auto_correct: true
           node.ssh.forward_agent = true
 
           # porte
-          node.vm.network "forwarded_port", guest: 8080, host: 8088, id: 'http', auto_correct: true
-          node.vm.network "forwarded_port", guest: 8081, host: 8081, id: 'http1', auto_correct: true
-          node.vm.network "forwarded_port", guest: 8082, host: 8082, id: 'http2', auto_correct: true
+          # in windows va abilitato campo  host_ip: "localhost"
+          node.vm.network "forwarded_port", guest: 8080, host: 8088, id: 'http', host_ip: "localhost", auto_correct: true
+          node.vm.network "forwarded_port", guest: 8081, host: 8081, id: 'http1', host_ip: "localhost", auto_correct: true
+          node.vm.network "forwarded_port", guest: 8082, host: 8082, id: 'http2', host_ip: "localhost", auto_correct: true
 
           # provisioning con bash
           node.vm.provision :shell, :inline => 'apt-get update'
