@@ -1,4 +1,4 @@
-# Progetto per il corso di Architettura dei Sistemi Software della Laurea Magistrale in Ingegneria Informatica presso l'università Roma Tre (2017)
+# Progetti per il corso di Architettura dei Sistemi Software della Laurea Magistrale in Ingegneria Informatica presso l'università Roma Tre (2017)
 
 Progetti per il corso
 di Architettura dei Sistemi Software
