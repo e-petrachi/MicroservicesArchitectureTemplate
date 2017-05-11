@@ -14,17 +14,17 @@ e la loro costruzione ed esecuzione è descritta qui di seguito.
 
 ### Build  
 
-La costruzione delle applicazioni viene fatta automaticamente con la creazione del nodo **dev**.
+La costruzione delle applicazioni viene guidata a seguito della creazione del nodo **dev** da istruzioni apposite sul terminale.
 
-In particolare aprire una finestra terminale e posizionarsi nella directory **developer** del nodo **dev** ad esempio come:
+In particolare eseguire lo script:
 
-      cd projects-ASW/ambienti/developer
+      ./startUpDev.sh
 
-E dopo eseguire il comando:
-
-      vagrant up
-
-Una volta avviata la macchina virtuale **dev** attendere alcuni minuti l'avvio automatico dei servizi.
+Una volta avviata la macchina virtuale **dev** seguire le istruzioni ed in particolare 
+Apri tre terminali nella cartella **developer** ed esegui rispettivamente : 
+      vagrant ssh dev       ./shared/scripts/startup1.sh
+      vagrant ssh dev       ./shared/scripts/startup2.sh
+      vagrant ssh dev       ./shared/scripts/startup3.sh
 
 Al termine dell'esecuzione eseguire lo stop del nodo **dev** con il comando:
 
