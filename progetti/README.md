@@ -1,13 +1,8 @@
-# Progetti del corso di Architettura dei Sistemi Software
+# Progetti
 
 Questa sezione del repository contiene il codice (codice sorgente)
 di alcune semplici *applicazioni software distribuite* e basate su *middleware*.
-Le diverse applicazioni distribuite sono organizzate in progetti
-(rappresentati da sottocartelle in questa sezione del repository),
-ciascuno dei quali è relativo a un argomento delle esercitazioni del corso.
-
-Attualmente non sono presenti tutti i progetti e tutte le applicazioni.
-Verranno aggiunti a questo repository durante lo svolgimento del corso.
+Le diverse applicazioni distribuite sono organizzate in progetti.
 
 L'esecuzione delle applicazioni distribuite deve essere effettuata
 in un opportuno *ambiente di esecuzione*,
@@ -28,22 +23,6 @@ Queste informazioni sono descritte nell'ambito di ciascun progetto.
 
 La costruzione (build, ovvero compilazione e assemblaggio) delle applicazioni
 viene fatta in automatico alla creazione del nodo relativo utilizzando **Gradle**.
-
-## Esecuzione
-
-Il risultato della costruzione di un'applicazione
-in generale composto da uno o più **componenti eseguibili**,
-che dopo la costruzione sono disponibili nella cartella **dist** dell'applicazione,
-che in particolare conterrà una sotto-cartella per ciascun componente eseguibile dell'applicazione,
-contenente i file *jar* dell'applicazione, eventuali file di configurazione,
-nonchè uno *script* per mandare in esecuzione il componente eseguibile.
-
-In generale, ciascun componente eseguibile va poi mandato in esecuzione
-nell'ambito di una opportuna macchina virtuale di un opportuno ambiente di esecuzione.
-
-La modalità specifica di esecuzione delle applicazioni distribuite
-varia in modo significativo da progetto a progetto,
-ed è descritta nell'ambito dei singoli progetti.
 
 ## Progetti
 
