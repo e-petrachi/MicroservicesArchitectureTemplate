@@ -22,9 +22,10 @@ In particolare eseguire lo script:
 
 Una volta avviata la macchina virtuale **dev** seguire le istruzioni ed in particolare 
 Apri tre terminali nella cartella **developer** ed esegui rispettivamente : 
-      vagrant ssh dev       ./shared/scripts/startup1.sh
-      vagrant ssh dev       ./shared/scripts/startup2.sh
-      vagrant ssh dev       ./shared/scripts/startup3.sh
+     
+     vagrant ssh dev       ./shared/scripts/startup1.sh
+     vagrant ssh dev       ./shared/scripts/startup2.sh
+     vagrant ssh dev       ./shared/scripts/startup3.sh
 
 Al termine dell'esecuzione eseguire lo stop del nodo **dev** con il comando:
 
