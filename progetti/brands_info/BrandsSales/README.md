@@ -4,13 +4,13 @@ Informazioni commerciali Brand di moda
 
 Il servizio **BrandsSales** fornisce due operazioni:
 
-*   /S2/<brand>/<anno> 
+*   /S2/**brand**/**anno**
 
-restituisce informazioni commerciali (casuali) sul <brand> in quell’ <anno>.
+restituisce informazioni commerciali (casuali) sul **brand** in quell’ **anno**.
 
-*   /S2/<brand>
+*   /S2/**brand**
 
-restituisce informazioni informazioni sul fatturato annuale più alto mai registrato da quel <brand>.
+restituisce informazioni informazioni sul fatturato annuale più alto mai registrato da quel **brand**.
 
 Ad esempio:
 
