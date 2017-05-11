@@ -1,10 +1,10 @@
 # Progetto per il corso di Architettura dei Sistemi Software della Laurea Magistrale in Ingegneria Informatica presso l'università Roma Tre (2017)
 
-Benvenuti al repository del  progetto per il corso
-di [Architettura dei Sistemi Software](http://cabibbo.dia.uniroma3.it/asw/)
+Progetti per il corso
+di Architettura dei Sistemi Software
 a Roma Tre,
 edizione 2017 (A.A. 2016-2017),
-tenuto dal prof. [Luca Cabibbo](http://cabibbo.dia.uniroma3.it/).
+tenuto dal prof. Luca Cabibbo.
 
 Questo repository contiene il codice dei *progetti*
 relativi a delle semplici *applicazioni software distribuite*
@@ -14,12 +14,7 @@ che vanno eseguite in degli opportuni *ambienti distribuiti*:
   e costruito con [Gradle](http://gradle.org/);
 * ciascun ambiente di esecuzione distribuito è composto
   da una o più macchine virtuali create con
-  [VirtualBox](https://www.virtualbox.org/)
-  e [Vagrant](https://www.vagrantup.com/),
-  e accedute tramite [Git](https://git-scm.com/);
-* inoltre, alcuni ambienti di esecuzione  
-  sono basati su contenitori
-  [Docker](https://www.docker.com/).
+  [Vagrant](https://www.vagrantup.com/).
 
 ## Software da installare sul proprio PC
 
@@ -35,9 +30,6 @@ che vanno eseguite in degli opportuni *ambienti distribuiti*:
 * [Vagrant](https://www.vagrantup.com/)
 * [Git](https://git-scm.com/)
 
-[Docker](https://www.docker.com/) non è invece necessario,
-poichè può essere eseguito nelle macchine virtuali.
-
 ## Organizzazione del repository
 
 Questo repository è organizzato in diverse sezioni (cartelle):
@@ -52,9 +44,9 @@ Questo repository è organizzato in diverse sezioni (cartelle):
 Per effettuare il download del repository, usare il seguente comando Git
 dalla cartella locale in cui si vuole scaricare il repository:
 
-    git clone https://github.com/e-petrachi/projects-ASW
+    $ git clone https://github.com/e-petrachi/projects-ASW
 
 Per aggiornare il contenuto della propria copia locale del repository,
 usare il seguente comando Git dalla cartella locale in cui è stato scaricato il repository:
 
-    git pull
+    $ git pull
