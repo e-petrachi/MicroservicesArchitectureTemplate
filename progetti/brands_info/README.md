@@ -16,19 +16,19 @@ e la loro costruzione ed esecuzione è descritta qui di seguito.
 
 La costruzione delle applicazioni viene guidata a seguito della creazione del nodo **dev** da istruzioni apposite sul terminale. In particolare eseguire lo script:
 
-      sh startUpDev.sh
+      $ sh startUpDev.sh
 
 Una volta avviata la macchina virtuale **dev** seguire le istruzioni o in particolare, aprire 3 finestre del terminale, posizionarsi nella directory **developer** ed eseguire rispettivamente questi comandi separatamente:
      
-     vagrant ssh dev       sh shared/scripts/startup1.sh
+     $ vagrant ssh dev       $ sh shared/scripts/startup1.sh
      
-     vagrant ssh dev       sh shared/scripts/startup2.sh
+     $ vagrant ssh dev       $ sh shared/scripts/startup2.sh
      
-     vagrant ssh dev       sh shared/scripts/startup3.sh
+     $ vagrant ssh dev       $ sh shared/scripts/startup3.sh
 
 Al termine dell'esecuzione eseguire lo stop del nodo **dev** con il comando:
 
-      vagrant halt dev
+      $ vagrant halt dev
 
 ### Ambiente di esecuzione
 
