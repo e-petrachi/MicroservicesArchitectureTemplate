@@ -8,7 +8,7 @@ Il servizio **BrandsFamous** fornisce una sola operazione:
 
 restituisce informazioni (casuali) su uno dei prodotti di abbigliamento maggiormente venduto dal **brand**.
 
-Ad esempio:
+## Ad esempio:
 
 * La richiesta /S1/Adidas potrebbe restituire: “le scarpe”
 
