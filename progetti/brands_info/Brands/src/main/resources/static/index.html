@@ -1,28 +1,66 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Brands Info</title>
+<meta charset="ISO-8859-1">
+<title>Brands Info</title>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 </head>
-
 <body>
-  <h1>Brands Info</h1>
+<script>
 
-  <h2>Server S</h2>
-  <p><a href="/S/Levis">Ask of LEVIS</a></p>
-  <p><a href="/S/Adidas">Ask of ADIDAS</a></p>
-  <p><a href="/S/Lacoste">Ask of LACOSTE</a></p>
-  <p><a href="/S/Inestistente">Ask of ?</a>
-  <p></p>
-  <p><a href="/S/Levis/2011">Ask of LEVIS in year '11</a></p>
-  <p><a href="/S/Adidas/2016">Ask of ADIDAS in year '16</a></p>
-  <p><a href="/S/Lacoste/2014">Ask of LACOSTE in year '14</a></p>
-  <p><a href="/S/Inestistente/1800">Ask of ? in year ?</a></p>
-  <h2>Server S1</h2>
-  <p><a href="http://localhost:8081/S1/Levis">Ask of LEVIS</a></p>
-  <p><a href="http://localhost:8081/S1/Inestistente">Ask of ?</a>
-  <h2>Server S2</h2>
-  <p><a href="http://localhost:8082/S2/Levis">Ask of LEVIS</a></p>
-  <p><a href="http://localhost:8082/S2/Levis/2011">Ask of LEVIS in year '11</a></p>
-  <p><a href="http://localhost:8082/S2/Inestistente/1800">Ask of ? in year ?</a></p>
+function invia()
+{
+	
+	var brand=document.getElementById("brand").value;
+	brand=brand.charAt(0).toUpperCase() + brand.slice(1);
+	var year=document.getElementById("year").value;
+	var url= "http://localhost:8088/S/"+brand+"/"+year;
+	window.location.href=url;
+	}
+
+</script>
+
+
+<!-- implementazione senza pure.css
+
+ <form method="get" action="javascript: invia()"> 
+ <p> Inserisci nome del Brand per ottenere informazioni 
+
+ <p> Nome del Brand: <input type="text" name="name" id="name" value="" />
+ <p> Anno di interesse  <input type="number" name="year" id="year" value="" />
+ 
+ <br>  <input type="submit" value="invia" />
+
+</form>
+ -->
+<br>
+	<br>
+	<br>
+	<br>
+	
+	<form method="get" action="javascript: invia()" class="pure-form pure-form-aligned">
+    <fieldset>
+    <div class="pure-controls">
+    <h1> Inserisci Dati </h1>
+    </div>
+    
+        <div class="pure-control-group">
+            <label for="Brand"> Nome del Brand:</label>
+            <input id="brand" type="text" placeholder="Brand">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="year">Anno di interesse:</label>
+            <input id="year" type="number" placeholder="Year">
+        </div>
+
+       <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Invia</button>
+        </div>
+    </fieldset>
+</form>
+
 
 </body>
 </html>
