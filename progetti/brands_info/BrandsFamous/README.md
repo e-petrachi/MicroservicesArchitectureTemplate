@@ -10,7 +10,5 @@ restituisce informazioni (casuali) su uno dei prodotti di abbigliamento maggiorm
 
 Ad esempio:
 
-* La richiesta /S1/Adidas potrebbe restituire:
-
-“le scarpe”
+* La richiesta /S1/Adidas potrebbe restituire: “le scarpe”
 
