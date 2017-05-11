@@ -14,7 +14,7 @@ Il servizio **Brands** fornisce due operazioni:
     
     restituisce informazioni (casuali) sul prodotto di abbigliamento maggiormente venduto dal **brand** e informazioni sul fatturato annuale più alto mai registrato da quel **brand**.
 
-Ad esempio:
+# Ad esempio:
 
 * La richiesta /S/Adidas/2015 potrebbe restituire: “Adidas è famosa per le scarpe e nell’anno 2015 ha fatturato 17 miliardi.”
 
