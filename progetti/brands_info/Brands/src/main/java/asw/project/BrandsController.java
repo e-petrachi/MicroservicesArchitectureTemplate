@@ -32,34 +32,21 @@ public class BrandsController {
 		return sentence; 
 	}
 	
-	private String getWords(String uri, String key) {
+	private String doRequest(String uri, String key) {
 		return new RestTemplate().getForObject(uri + "/" + key,String.class);
 	}
-	private String getWords(String uri, String key1, String key2) {
+	private String doRequest(String uri, String key1, String key2) {
 		return new RestTemplate().getForObject(uri + "/" + key1 + "/" + key2 ,String.class);
 	}
 	
-	// se utilizzi i profili scommenta questo blocco
-	/**
-	private String getFamous() {
-		return getWords(famousUri);
-	}	
-	private String getSales() {
-		return getWords(salesUri);
-	}
-	private String getWords(String uri) {
-		return new RestTemplate().getForObject(uri,String.class);
-	}
-	**/
-	
 	private String getFamous(String key) {
-		return getWords(famousUri, key);
+		return doRequest(famousUri, key);
 	}	
 	private String getSales(String key) {
-		return getWords(salesUri, key);
+		return doRequest(salesUri, key);
 	}
 	private String getSales(String key1, String key2) {
-		return getWords(salesUri, key1, key2);
+		return doRequest(salesUri, key1, key2);
 	}
 	
 }

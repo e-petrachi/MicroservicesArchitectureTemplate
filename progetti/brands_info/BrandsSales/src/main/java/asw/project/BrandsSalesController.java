@@ -18,14 +18,16 @@ public class BrandsSalesController {
 
 	@PostConstruct
 	public void init(){
-		this.keys = new String[]{"levis","adidas","lacoste"};
+		this.keys = new String[]{"levis","adidas","lacoste","nike","ck"};
 		this.sales = new HashMap<>();
 		this.sales.put(keys[0], "19 miliardi");
 		this.sales.put(keys[1], "20 miliardi");
 		this.sales.put(keys[2], "21 miliardi");
+		this.sales.put(keys[3], "22 miliardi");
+		this.sales.put(keys[4], "10 miliardi");
 
 		this.salesYear = new HashMap<>();
-		for(int i=0;i<3;i++){
+		for(int i=0;i<5;i++){
 			boolean finito = false;
 			Integer year = 2010;
 			while(!finito){
@@ -38,23 +40,22 @@ public class BrandsSalesController {
 		}
 	}
 
-	@RequestMapping("/S2/")
-	public String getWord() {
-		int random = ThreadLocalRandom.current().nextInt(0, 3);
+	private String getRevenue() {
+		int random = ThreadLocalRandom.current().nextInt(0, 4);
 		return this.sales.get(this.keys[random].toLowerCase());
 	}
 	@RequestMapping("/S2/{key}")
-	public String getWord(@PathVariable String key) {
+	public String getRevenue(@PathVariable String key) {
 		if(this.sales.get(key.toLowerCase()) == null){
-			return getWord();	
+			return getRevenue();	
 		}
 		return this.sales.get(key.toLowerCase());
 	}
 	
 	@RequestMapping("/S2/{key1}/{key2}")
-	public String getWord(@PathVariable String key1, @PathVariable String key2){
+	public String getRevenue(@PathVariable String key1, @PathVariable String key2){
 		if(this.salesYear.get(key1.toLowerCase()+key2) == null){
-			return getWord();	
+			return getRevenue();	
 		}
 		return this.salesYear.get(key1.toLowerCase()+key2);
 	}

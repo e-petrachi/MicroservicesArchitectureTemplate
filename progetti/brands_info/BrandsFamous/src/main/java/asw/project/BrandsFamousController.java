@@ -17,21 +17,22 @@ public class BrandsFamousController {
 	
 	@PostConstruct
 	public void init(){
-		this.keys = new String[]{"levis","adidas","lacoste"};
+		this.keys = new String[]{"levis","adidas","lacoste","nike","ck"};
 		this.famousFor = new HashMap<>();
 		this.famousFor.put(keys[0], "jeans");
 		this.famousFor.put(keys[1], "scarpe");
 		this.famousFor.put(keys[2], "polo");
+		this.famousFor.put(keys[3], "felpe");
+		this.famousFor.put(keys[4], "intimo");
 	}
-	@RequestMapping("/S1/")
-	public String getWord() {
-		int random = ThreadLocalRandom.current().nextInt(0, 3);
+	private String getProduct() {
+		int random = ThreadLocalRandom.current().nextInt(0, 4);
 		return this.famousFor.get(this.keys[random].toLowerCase());
 	}
 	@RequestMapping("/S1/{key}")
-	public String getWord(@PathVariable String key) {
+	public String getProduct(@PathVariable String key) {
 		if(this.famousFor.get(key.toLowerCase()) == null)
-			return getWord();
+			return getProduct();
 		return this.famousFor.get(key.toLowerCase());
 	}	
 }
