@@ -14,19 +14,17 @@ e la loro costruzione ed esecuzione è descritta qui di seguito.
 
 ### Build  
 
-La costruzione delle applicazioni viene guidata a seguito della creazione del nodo **dev** da istruzioni apposite sul terminale.
+La costruzione delle applicazioni viene guidata a seguito della creazione del nodo **dev** da istruzioni apposite sul terminale. In particolare eseguire lo script:
 
-In particolare eseguire lo script:
+      sh startUpDev.sh
 
-      ./startUpDev.sh
-
-Una volta avviata la macchina virtuale **dev** seguire le istruzioni o in particolare apri tre terminali nella cartella **developer** ed esegui rispettivamente:
+Una volta avviata la macchina virtuale **dev** seguire le istruzioni o in particolare, aprire 3 finestre del terminale, posizionarsi nella directory **developer** ed eseguire rispettivamente questi comandi separatamente:
      
-     vagrant ssh dev       ./shared/scripts/startup1.sh
+     vagrant ssh dev       sh shared/scripts/startup1.sh
      
-     vagrant ssh dev       ./shared/scripts/startup2.sh
+     vagrant ssh dev       sh shared/scripts/startup2.sh
      
-     vagrant ssh dev       ./shared/scripts/startup3.sh
+     vagrant ssh dev       sh shared/scripts/startup3.sh
 
 Al termine dell'esecuzione eseguire lo stop del nodo **dev** con il comando:
 
@@ -43,5 +41,4 @@ vengono anche pubblicate sulla porta **8082** dell'host.
 
 #### Esecuzione dell'applicazione
 
-Le macchine vengono eseguite in coda alla creazione del nodo **dev** e dopo alcuni minuti sono disponibili.
-Su qualsiasi browser collegarsi al [URL](http://localhost:8088/) di **localhost** sulla porta **8088**.
+Su qualsiasi browser collegarsi al [URL](http://localhost:8088/) di **localhost** sulla porta **8088** e visualizzare la pagina index.html per una visita guidata ai servizi offerti.
