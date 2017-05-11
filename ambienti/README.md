@@ -2,29 +2,29 @@
 
 Questa sezione del repository contiene il codice (*infrastructure-as-code*) 
 di alcuni *ambienti di esecuzione* distribuiti virtuali. 
-Ogni sottosezione (sottocartella) è relativa a un diverso ambiente di esecuzione. 
+Ogni sottosezione (sottocartella) Ã¨ relativa a un diverso ambiente di esecuzione. 
 
 Attualmente non sono presenti tutti gli ambienti. 
 Verranno aggiunti a questo repository durante lo svolgimento del corso. 
 
 Questi ambienti di esecuzione possono essere utilizzati per 
 eseguire i progetti delle applicazioni distribuite 
-definiti nella cartella [projects/](../projects/) del repository. 
+definiti nella cartella [progetti/](../progetti/) del repository. 
 
 ## Preparazione 
 
-Per usare delle versioni più recenti del software di sviluppo 
+Per usare delle versioni piÃ¹ recenti del software di sviluppo 
 (come *JDK* e *Gradle*) 
-è necessario modificare le prime righe dei relativi script di installazione 
+Ã¨ necessario modificare le prime righe dei relativi script di installazione 
 (per esempio, **environments/shared/scripts/setup-java.sh** per *JDK*), 
 indicando il numero della versione da utilizzare. 
 
 ## Utilizzo degli ambienti di esecuzione 
 
-Ogni ambiente di esecuzione è composto da uno o più macchine virtuali, 
+Ogni ambiente di esecuzione Ã¨ composto da uno o piÃ¹ macchine virtuali, 
 collegate in una rete privata. 
 
-Ogni ambiente è rappresentato da una diversa cartella di questa sezione del repository. 
+Ogni ambiente Ã¨ rappresentato da una diversa cartella di questa sezione del repository. 
 Si veda il file **README.md** di una cartella per la descrizione del relativo ambiente. 
 
 Gli ambienti vengono creati con **Vagrant**, 
