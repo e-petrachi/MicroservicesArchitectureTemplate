@@ -11,15 +11,7 @@ Questi ambienti di esecuzione possono essere utilizzati per
 eseguire i progetti delle applicazioni distribuite 
 definiti nella cartella [progetti/](../progetti/) del repository. 
 
-## Preparazione 
-
-Per usare delle versioni più recenti del software di sviluppo 
-(come *JDK* e *Gradle*) 
-è necessario modificare le prime righe dei relativi script di installazione 
-(per esempio, **environments/shared/scripts/setup-java.sh** per *JDK*), 
-indicando il numero della versione da utilizzare. 
-
-## Utilizzo degli ambienti di esecuzione 
+# Utilizzo degli ambienti di esecuzione 
 
 Ogni ambiente di esecuzione è composto da uno o più macchine virtuali, 
 collegate in una rete privata. 
