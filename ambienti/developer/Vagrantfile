@@ -55,14 +55,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
           node.vm.provision :shell,
               inline: "echo  'configurazione nodo developer completata'"
+          node.vm.provision :shell, run:"always",
+                inline: "echo 'Apri tre terminali nella cartella developer ed esegui rispettivamente:' &&
+                         echo '$ vagrant ssh dev \t\t $ ./shared/scripts/startup1.sh' &&
+  		                   echo '$ vagrant ssh dev \t\t $ ./shared/scripts/startup2.sh' &&
+  		                   echo '$ vagrant ssh dev \t\t $ ./shared/scripts/startup3.sh '"
+         # node.vm.provision :shell, run: "always", path: "../shared/scripts/startup1.sh"
+         # node.vm.provision :shell, run: "always", path: "../shared/scripts/startup2.sh"
+         # node.vm.provision :shell, run: "always", path: "../shared/scripts/startup3.sh"
 
-          node.vm.provision :shell, run: "always", path: "../shared/scripts/startup1.sh"
-          node.vm.provision :shell, run: "always", path: "../shared/scripts/startup2.sh"
-          node.vm.provision :shell, run: "always", path: "../shared/scripts/startup3.sh"
-
-          node.vm.provision :shell, run: "always",
-              inline: "echo  'Lancio delle applicazioni Gradle ...' && sleep 1m &&
-              echo '...' && sleep 1m && echo '...' && sleep 1m && echo 'Caricamento completato!'"
+         #node.vm.provision :shell, run: "always",
+         #     inline: "echo  'Lancio delle applicazioni Gradle ...' && sleep 1m &&
+          #    echo '...' && sleep 1m && echo '...' && sleep 1m && echo 'Caricamento completato!'"
 
       end
 
