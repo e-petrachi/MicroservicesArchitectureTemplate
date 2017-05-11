@@ -14,10 +14,6 @@ restituisce informazioni informazioni sul fatturato annuale più alto mai regist
 
 Ad esempio:
 
-* La richiesta /S2/Adidas/2015 potrebbe restituire:
+* La richiesta /S2/Adidas/2015 potrebbe restituire: “17 miliardi”
 
-“17 miliardi”
-
-* La richiesta /S2/Adidas potrebbe restituire:
-
-“20 miliardi”
+* La richiesta /S2/Adidas potrebbe restituire:  “20 miliardi”
