@@ -12,7 +12,7 @@ restituisce informazioni commerciali (casuali) sul **brand** in quell’ **anno*
 
 restituisce informazioni informazioni sul fatturato annuale più alto mai registrato da quel **brand**.
 
-Ad esempio:
+## Ad esempio:
 
 * La richiesta /S2/Adidas/2015 potrebbe restituire: “17 miliardi”
 
