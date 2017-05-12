@@ -7,14 +7,20 @@ edizione 2017 (A.A. 2016-2017),
 tenuto dal prof. Luca Cabibbo.
 
 Questo repository contiene il codice dei *progetti*
-relativi a delle semplici *applicazioni software distribuite*
-(basate sull'uso di *middleware*),
+relativi a delle semplici *applicazioni software distribuite*,
 che vanno eseguite in degli opportuni *ambienti distribuiti*:
 * il software è normalmente scritto in [Java](http://www.oracle.com/technetwork/java/index.html),
   e costruito con [Gradle](http://gradle.org/);
 * ciascun ambiente di esecuzione distribuito è composto
   da una o più macchine virtuali create con
   [Vagrant](https://www.vagrantup.com/).
+  
+## Sviluppatori
+
+* Enrico Petrachi @e-petrachi
+* Marco Zebi @MarcoZebi
+* Davide Orlando @DavOrlando
+* Ciro Oliviero @CiroOl
 
 ## Software da installare sul proprio PC
 
