@@ -17,10 +17,10 @@ che vanno eseguite in degli opportuni *ambienti distribuiti*:
   
 ## Sviluppatori
 
-* Enrico Petrachi @e-petrachi
-* Marco Zebi @MarcoZebi
-* Davide Orlando @DavOrlando
-* Ciro Oliviero @CiroOl
+* Enrico Petrachi [@e-petrachi](https://github.com/e-petrachi)
+* Marco Zebi [@MarcoZebi](https://github.com/MarcoZebi)
+* Davide Orlando [@DavOrlando](https://github.com/DavOrlando)
+* Ciro Oliviero [@CiroOl](https://github.com/CiroOl)
 
 ## Software da installare sul proprio PC
 
