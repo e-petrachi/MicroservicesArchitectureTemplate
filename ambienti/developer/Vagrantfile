@@ -11,24 +11,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Ubuntu Trusty (14.04 LTS) 64 bit VirtualBox.
     config.vm.box = "ubuntu/trusty64"
-    # config.vm.box_url = "http://files.vagrantup.com/ubuntu/trusty64.box"
 
-    # folder per i progetti Asw (/home/vagrant/projects)
+    # folder per i progetti (/home/vagrant/projects)
     config.vm.synced_folder "../../progetti/", "/home/vagrant/projects", :mount_options => ["dmode=777", "fmode=777"]
 
-    # folder per le risorse condivise per gli ambienti Asw (/home/vagrant/shared/resources e /home/vagrant/shared/scripts)
+    # folder per le risorse condivise (/home/vagrant/shared/resources e /home/vagrant/shared/scripts)
     config.vm.synced_folder "../shared/", "/home/vagrant/shared", :mount_options => ["dmode=777", "fmode=777"]
 
-    # folder per i progetti docker Asw (/home/vagrant/docker)
-    # config.vm.synced_folder "../../docker/", "/home/vagrant/docker", :mount_options => ["dmode=777", "fmode=777"]
-
-
     #
-      # Configurazione del nodo "dev", che prevede:
-      # - Oracle Java SDK 8
-      # - Gradle
-      # - Apache Maven
-      #
+      # Configurazione del nodo "dev":
+
       config.vm.define "dev" do |node|
           node.vm.hostname = "dev"
           node.vm.network "private_network", ip: "10.11.1.51", virtualbox__intnet: true
@@ -37,15 +29,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                v.memory = 4096
                v.cpus = 2
           end
-          # in windows va abilitato campo  host_ip: "localhost"
+          # porta ssh
           node.vm.network "forwarded_port", guest: 22, host: 2222, id: 'ssh', host_ip: "localhost",auto_correct: true
           node.ssh.forward_agent = true
 
           # porte
-          # in windows va abilitato campo  host_ip: "localhost"
-          node.vm.network "forwarded_port", guest: 8080, host: 8088, id: 'http', host_ip: "localhost", auto_correct: true
-          node.vm.network "forwarded_port", guest: 8081, host: 8081, id: 'http1', host_ip: "localhost", auto_correct: true
-          node.vm.network "forwarded_port", guest: 8082, host: 8082, id: 'http2', host_ip: "localhost", auto_correct: true
+          node.vm.network "forwarded_port", guest: 8080, host: 8088, id: 'S',  host_ip: "localhost", auto_correct: true
+          node.vm.network "forwarded_port", guest: 8081, host: 8081, id: 'S1', host_ip: "localhost", auto_correct: true
+          node.vm.network "forwarded_port", guest: 8082, host: 8082, id: 'S2', host_ip: "localhost", auto_correct: true
 
           # provisioning con bash
           node.vm.provision :shell, :inline => 'apt-get update'
@@ -55,18 +46,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
           node.vm.provision :shell,
               inline: "echo  'configurazione nodo developer completata'"
-          node.vm.provision :shell, run:"always",
-                inline: "echo 'Apri tre terminali nella cartella developer ed esegui rispettivamente:' &&
-                         echo '$ vagrant ssh dev \t\t $ ./shared/scripts/startup1.sh' &&
-  		                   echo '$ vagrant ssh dev \t\t $ ./shared/scripts/startup2.sh' &&
-  		                   echo '$ vagrant ssh dev \t\t $ ./shared/scripts/startup3.sh '"
-         # node.vm.provision :shell, run: "always", path: "../shared/scripts/startup1.sh"
-         # node.vm.provision :shell, run: "always", path: "../shared/scripts/startup2.sh"
-         # node.vm.provision :shell, run: "always", path: "../shared/scripts/startup3.sh"
 
-         #node.vm.provision :shell, run: "always",
-         #     inline: "echo  'Lancio delle applicazioni Gradle ...' && sleep 1m &&
-          #    echo '...' && sleep 1m && echo '...' && sleep 1m && echo 'Caricamento completato!'"
+          # istruzioni per l'avvio
+          node.vm.provision :shell, run:"always",
+                inline: "echo 'Aprire tre terminali, posizionarsi nella cartella developer ed eseguire rispettivamente:' &&
+                         echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup1.sh' &&
+  		                   echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup2.sh' &&
+  		                   echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup3.sh '"
 
       end
 
