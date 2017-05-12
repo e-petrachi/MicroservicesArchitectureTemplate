@@ -16,6 +16,6 @@ Il servizio **Brands** fornisce due operazioni:
 
 ## Ad esempio:
 
-* La richiesta /S/Adidas/2015 potrebbe restituire: “Adidas è famosa per le scarpe e nell’anno 2015 ha fatturato 17 miliardi.”
+* La richiesta /S/Adidas/2015 potrebbe restituire: “Adidas è famosa per le scarpe e nell’anno 2015 ha fatturato 17 miliardi di euro.”
 
-* La richiesta /S/Adidas potrebbe restituire: “Adidas è famosa per le scarpe e il record del fatturato annuo è di 20 miliardi.”
+* La richiesta /S/Adidas potrebbe restituire: “Adidas è famosa per le scarpe e il record del fatturato annuo è di 20 miliardi di euro.”
