@@ -5,9 +5,9 @@ E' composto da una sola macchina virtuale **dev** (*developer*).
 
 ## Descrizione
 
-### dev
+### DEV
 
-La macchina virtuale **dev** ha il seguente software
+#### Software
 
 * Ubuntu Trusty (14.04 LTS) a 64 bit
 
@@ -17,7 +17,7 @@ La macchina virtuale **dev** ha il seguente software
 
 * Maven
 
-Configurazione di rete
+#### Configurazione di rete
 
 * Indirizzo IP: 10.11.1.51
 
@@ -29,7 +29,7 @@ Configurazione di rete
   
     + 8082 -> 8083
 
-Hardware (virtuale)
+#### Hardware
 
 * Memoria: 4096 MB (4 GB)
 
