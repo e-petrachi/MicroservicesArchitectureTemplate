@@ -29,7 +29,7 @@ che vanno eseguite in degli opportuni *ambienti distribuiti*:
 * [VirtualBox](https://www.virtualbox.org/)
 * [Vagrant](https://www.vagrantup.com/)
 
-## Organizzazione del repository
+## Organizzazione
 
 Questo repository è organizzato in diverse sezioni (cartelle):
 * [progetti](progetti/) contiene il codice delle *applicazioni distribuite*,
@@ -38,7 +38,7 @@ Questo repository è organizzato in diverse sezioni (cartelle):
   con una sottosezione (sottocartella) per ciascuno degli ambienti distribuiti
   su cui poter eseguire le applicazioni distribuite sviluppate.
 
-## Accesso al repository
+## Download
 
 Per effettuare il download del repository, usare il seguente comando Git
 dalla cartella locale in cui si vuole scaricare il repository:
