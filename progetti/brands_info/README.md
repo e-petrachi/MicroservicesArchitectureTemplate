@@ -9,16 +9,16 @@ che esemplificano l'uso di [Spring Boot](https://projects.spring.io/spring-boot/
 
 * **Brands** è un servizio per l'interrogazione su dati commerciali di brand d'abbigliamento, che accede i servizi **BrandsFamous** e **BrandsSales**
 
-Le diverse applicazioni hanno una struttura simile,
-e la loro costruzione ed esecuzione è descritta qui di seguito.
+Le diverse applicazioni comunicano tra loro tramite invocazioni remote con REST. 
+Ciascuno dei servizi è realizzato come una applicazione Spring Boot separata.
 
-### Build  
+### Build & Run
 
-La costruzione delle applicazioni viene guidata a seguito della creazione del nodo **dev** da istruzioni apposite sul terminale. In particolare eseguire lo script:
+La costruzione delle applicazioni viene guidata a seguito della creazione del nodo **dev** da istruzioni apposite sul terminale. In particolare una volta scaricato il repository, aprire una finestra del terminale ed eseguire lo script sotto che avvierà la macchina virtuale **dev**:
 
       $ sh startUpDev.sh
 
-Una volta avviata la macchina virtuale **dev** seguire le istruzioni o in particolare, aprire 3 finestre del terminale, posizionarsi nella directory **developer** ed eseguire rispettivamente questi comandi separatamente:
+Una volta avviata la macchina virtuale **dev** seguire le istruzioni che vengono visualizzate sul terminale stesso ed in particolare, aprire 3 finestre del terminale, posizionarsi nella directory **developer** ed eseguire rispettivamente questi comandi separatamente:
      
      $ vagrant ssh dev       $ sh shared/scripts/startup1.sh
      
@@ -26,13 +26,13 @@ Una volta avviata la macchina virtuale **dev** seguire le istruzioni o in partic
      
      $ vagrant ssh dev       $ sh shared/scripts/startup3.sh
 
-Al termine dell'esecuzione eseguire lo stop del nodo **dev** con il comando:
+Al termine dell'esecuzione si può eseguire lo stop del nodo **dev** con il comando:
 
       $ vagrant halt dev
 
 ### Ambiente di esecuzione
 
-Ciascuna di queste applicazioni può essere eseguita direttamente nell'ambiente
+Ciascuna di queste applicazioni verrà eseguita direttamente nell'ambiente
 [developer](../../ambienti/developer/), sul nodo **dev**.
 In questo modo, le applicazioni web che espongono servizi alla porta **8080** del nodo **dev**
 vengono anche pubblicate sulla porta **8088** dell'host, quelle che espongono servizi alla porta **8081** del nodo **dev**
