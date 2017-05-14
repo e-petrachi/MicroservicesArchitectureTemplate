@@ -1,13 +1,14 @@
 # brands_info
 
-Questo progetto contiene alcune applicazioni
-che esemplificano l'uso di [Spring Boot](https://projects.spring.io/spring-boot/):  
+Questo progetto è composto da alcuni servizi stateless, che comunicano tra loro tramite invocazioni remote con REST. 
+Ciascuno dei servizi è realizzato come una applicazione Spring Boot separata. 
+Il servizio principale **Brands** (S), può ricevere richieste da un client HTTP/REST esterno, ed in particolare da un qualunque browser web, e può effettuare richieste ai suoi servizi secondari **BrandsFamous** (S1) e **BrandsSales** (S2).
 
-* **BrandsFamous** è un servizio che fornisce informazioni generiche (casuali) riferite ad un brand d'abbigliamento, utilizzato dal servizio **Brands**
+* [**Brands**](Brands/) è un servizio per l'interrogazione su dati commerciali di brand d'abbigliamento, che accede i servizi **BrandsFamous** e **BrandsSales** 
 
-* **BrandsSales** è un servizio che fornisce informazioni (casuali) su fatturato riferite ad un brand d'abbigliamento sia in riferimento ad un anno solare specifico che in alternativa al fatturato più alto, utilizzato dal servizio **Brands**
+* [**BrandsFamous**](BrandsFamous/) è un servizio che fornisce informazioni generiche (casuali) riferite ad un brand d'abbigliamento, utilizzato dal servizio **Brands**
 
-* **Brands** è un servizio per l'interrogazione su dati commerciali di brand d'abbigliamento, che accede i servizi **BrandsFamous** e **BrandsSales**
+* [**BrandsSales**](BrandsSales/) è un servizio che fornisce informazioni (casuali) su fatturato riferite ad un brand d'abbigliamento sia in riferimento ad un anno solare specifico che in alternativa al fatturato più alto, utilizzato dal servizio **Brands**
 
 Le diverse applicazioni comunicano tra loro tramite invocazioni remote con REST. 
 Ciascuno dei servizi è realizzato come una applicazione Spring Boot separata.
