@@ -1,19 +1,23 @@
-# BrandsSales
+# BrandsSales (S2)
 
-Informazioni commerciali Brand di moda
+Informazioni commerciali su Brands di moda
 
 Il servizio **BrandsSales** fornisce due operazioni:
 
 *   /S2/**brand**/**anno**
 
-restituisce informazioni commerciali (casuali) sul **brand** in quell’ **anno**.
+  che restituisce informazioni commerciali (casuali) riguardo il fatturato del **brand** in quell’ **anno**.
 
 *   /S2/**brand**
 
-restituisce informazioni informazioni sul fatturato annuale più alto mai registrato da quel **brand**.
+  che restituisce informazioni commerciali (casuali) sul fatturato annuale più alto mai registrato da quel **brand**.
 
-## Ad esempio:
+## Esempio:
 
-* La richiesta /S2/Adidas/2015 potrebbe restituire: “17 miliardi”
+* La richiesta `/S2/Adidas/2015` potrebbe restituire: 
 
-* La richiesta /S2/Adidas potrebbe restituire:  “20 miliardi”
+      “17 miliardi”
+
+* La richiesta `/S2/Adidas` potrebbe invece restituire:  
+
+      “20 miliardi”
