@@ -2,8 +2,7 @@
 
 Progetti per il corso
 di Architettura dei Sistemi Software
-a Roma Tre,
-edizione 2017 (A.A. 2016-2017),
+presso l'università Roma Tre, (A.A. 2016-2017),
 tenuto dal prof. Luca Cabibbo.
 
 Questo repository contiene il codice dei *progetti*
@@ -22,19 +21,13 @@ che vanno eseguite in degli opportuni *ambienti distribuiti*:
 * Davide Orlando [@DavOrlando](https://github.com/DavOrlando)
 * Ciro Oliviero [@CiroOl](https://github.com/CiroOl)
 
-## Software da installare sul proprio PC
-
-### Per lo sviluppo del software
+## Software da installare per l'esecuzione
 
 * [Java SDK](http://www.oracle.com/technetwork/java/javase/)
 * [Gradle](http://gradle.org/)
 * [Git](https://git-scm.com/)
-
-### Per la gestione degli ambienti di esecuzione  
-
 * [VirtualBox](https://www.virtualbox.org/)
 * [Vagrant](https://www.vagrantup.com/)
-* [Git](https://git-scm.com/)
 
 ## Organizzazione del repository
 
