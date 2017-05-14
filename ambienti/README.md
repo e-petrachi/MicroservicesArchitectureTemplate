@@ -1,7 +1,6 @@
-# Ambienti di esecuzione del corso di Architettura dei Sistemi Software 
+# Ambienti di esecuzione
 
-Questa sezione del repository contiene il codice (*infrastructure-as-code*) 
-di alcuni *ambienti di esecuzione* distribuiti virtuali. 
+Questa sezione contiene il codice di alcuni *ambienti di esecuzione* distribuiti virtuali. 
 Ogni sottosezione (sottocartella) è relativa a un diverso ambiente di esecuzione. 
 
 Questi ambienti di esecuzione possono essere utilizzati per 
