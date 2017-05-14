@@ -37,5 +37,5 @@ Per testare direttamente il servizio [**Brands**](Brands/) (S) digitare un url d
 
 Al termine dell'esecuzione si può eseguire lo stop del nodo **dev** con il comando:
 
-      $ vagrant halt dev
+      $ sh stopDev.sh
 
