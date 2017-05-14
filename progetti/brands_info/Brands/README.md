@@ -18,8 +18,8 @@ In particolare il servizio **Brands** fornisce due operazioni:
 
 * La richiesta `/S/Adidas/2015` potrebbe restituire: 
 
-    “Adidas è famosa per le scarpe e nell’anno 2015 ha fatturato 17 miliardi di euro.”
+        “Adidas è famosa per le scarpe e nell’anno 2015 ha fatturato 17 miliardi di euro.”
 
 * La richiesta `/S/Adidas` invece potrebbe restituire: 
 
-    “Adidas è famosa per le scarpe e il record del fatturato annuo è di 20 miliardi di euro.”
+        “Adidas è famosa per le scarpe e il record del fatturato annuo è di 20 miliardi di euro.”
