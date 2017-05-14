@@ -1,21 +1,25 @@
 # Brands
 
-Informazioni commerciali Brand di moda
+Informazioni commerciali su Brands di moda
 
-Il servizio principale **Brands** fornisce informazioni commerciali (casuali) ai suoi client riguardo dei brand di abbigliamento famosi. 
+Il servizio principale **Brands** fornisce informazioni commerciali (casuali) ai suoi client riguardo marche di abbigliamento famose. 
 
-Il servizio **Brands** fornisce due operazioni:
+In particolare il servizio **Brands** fornisce due operazioni:
     
 *   /S/**brand**/**anno** 
     
-    restituisce informazioni (casuali) sul prodotto di abbigliamento maggiormente venduto dal **brand** informazioni commerciali (sempre casuali) sul **brand** in quell’ **anno**.
+    che restituisce informazioni (casuali) sul prodotto di abbigliamento maggiormente venduto dal **brand** e informazioni commerciali (sempre casuali) sullo stesso **brand** in quell’ **anno**.
 
 *   /S/**brand** 
     
-    restituisce informazioni (casuali) sul prodotto di abbigliamento maggiormente venduto dal **brand** e informazioni sul fatturato annuale più alto mai registrato da quel **brand**.
+    che restituisce informazioni (casuali) sul prodotto di abbigliamento maggiormente venduto dal **brand** e informazioni sul fatturato annuale più alto mai registrato da quello stesso **brand**.
 
-## Ad esempio:
+## Esempio:
 
-* La richiesta /S/Adidas/2015 potrebbe restituire: “Adidas è famosa per le scarpe e nell’anno 2015 ha fatturato 17 miliardi di euro.”
+* La richiesta `/S/Adidas/2015` potrebbe restituire: 
 
-* La richiesta /S/Adidas potrebbe restituire: “Adidas è famosa per le scarpe e il record del fatturato annuo è di 20 miliardi di euro.”
+    “Adidas è famosa per le scarpe e nell’anno 2015 ha fatturato 17 miliardi di euro.”
+
+* La richiesta `/S/Adidas` invece potrebbe restituire: 
+
+    “Adidas è famosa per le scarpe e il record del fatturato annuo è di 20 miliardi di euro.”
