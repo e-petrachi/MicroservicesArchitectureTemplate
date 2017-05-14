@@ -6,7 +6,7 @@ Il servizio **BrandsFamous** fornisce una sola operazione:
 
 *   /S1/**brand** 
 
-che restituisce informazioni (casuali) su uno dei prodotti di abbigliamento maggiormente venduto dal **brand**.
+      che restituisce informazioni (casuali) su uno dei prodotti di abbigliamento maggiormente venduto dal **brand**.
 
 ## Esempio:
 
