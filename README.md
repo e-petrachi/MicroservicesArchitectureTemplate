@@ -13,11 +13,14 @@ che vanno eseguite in degli opportuni *ambienti distribuiti*:
 * ciascun ambiente di esecuzione distribuito è composto
   da una o più macchine virtuali create con
   [Vagrant](https://www.vagrantup.com/).
-  
+
 ## Sviluppatori
 
 * Enrico Petrachi [@e-petrachi](https://github.com/e-petrachi)
 * Marco Zebi [@MarcoZebi](https://github.com/MarcoZebi)
+
+## Collaboratori
+
 * Davide Orlando [@DavOrlando](https://github.com/DavOrlando)
 * Ciro Oliviero [@CiroOl](https://github.com/CiroOl)
 
@@ -37,4 +40,3 @@ Questo repository è organizzato in diverse sezioni (cartelle):
 * [ambienti](ambienti/) contiene il codice per la gestione degli *ambienti distribuiti*,
   con una sottosezione (sottocartella) per ciascuno degli ambienti distribuiti
   su cui poter eseguire le applicazioni distribuite sviluppate.
-

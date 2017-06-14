@@ -1,0 +1,35 @@
+version: '2'
+services:
+  eureka:
+    build:
+      context: ./Eureka
+    container_name: eureka
+#    ports:
+#    - "8761:8761"
+  brands-famous:
+    build:
+      context: ./BrandsFamous
+#    ports:
+#    - "8080"
+    depends_on:
+      - "eureka"
+  brands-sales:
+    build:
+      context: ./BrandsSales
+#    ports:
+#    - "8080"
+    depends_on:
+      - "eureka"
+  brands:
+    build:
+      context: ./Brands
+#    ports:
+#    - "8080"
+    depends_on:
+      - "eureka"
+  zuul:
+    build:
+      context: ./Zuul
+    container_name: zuul
+    ports:
+    - "8080:8080"

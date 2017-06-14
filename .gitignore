@@ -18,3 +18,4 @@ local.properties
 Thumbs.db
 Desktop.ini
 .svn
+*.pem

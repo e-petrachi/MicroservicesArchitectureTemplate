@@ -26,11 +26,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           node.vm.network "private_network", ip: "10.11.1.51", virtualbox__intnet: true
 
           node.vm.provider "virtualbox" do |v|
-               v.memory = 4096
-               v.cpus = 2
+               v.memory = 1536
+               v.cpus = 1
           end
           # porta ssh
-          node.vm.network "forwarded_port", guest: 22, host: 2222, id: 'ssh', host_ip: "localhost",auto_correct: true
+          node.vm.network "forwarded_port", guest: 22, host: 2222, id: 'ssh', host_ip: "localhost", auto_correct: true
           node.ssh.forward_agent = true
 
           # porte
@@ -44,15 +44,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           node.vm.provision :shell, path: "../shared/scripts/setup-gradle.sh"
           node.vm.provision :shell, path: "../shared/scripts/setup-maven.sh"
 
-          node.vm.provision :shell,
+          node.vm.provision :shell, run:"always",
               inline: "echo  'configurazione nodo developer completata'"
 
           # istruzioni per l'avvio
-          node.vm.provision :shell, run:"always",
-                inline: "echo 'Aprire tre terminali, posizionarsi nella cartella developer ed eseguire rispettivamente:' &&
-                         echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup1.sh' &&
-  		                   echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup2.sh' &&
-  		                   echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup3.sh '"
+          #node.vm.provision :shell, run:"always",
+          #      inline: "echo 'Aprire tre terminali, posizionarsi nella cartella developer ed eseguire rispettivamente:' &&
+          #               echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup1.sh' &&
+  		    #               echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup2.sh' &&
+  		    #               echo '$ vagrant ssh dev \t\t $ sh shared/scripts/startup3.sh '"
 
       end
 
