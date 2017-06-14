@@ -22,21 +22,24 @@ public class BrandsService {
 		return famousClient.getProduct(parametro1); 
 	} 
 	
-	public String getFallbackFamous() {
+	public String getFallbackFamous(String parametro1) {
 		return "nullaFamous"; 
 	}
 	
-	@HystrixCommand(fallbackMethod="getFallbackSales")
+	@HystrixCommand(fallbackMethod="getFallbackSales1")
 	public String getSales(String parametro1) {
 		return salesClient.getRevenue(parametro1); 
 	}
 	
-	@HystrixCommand(fallbackMethod="getFallbackSales")
+	@HystrixCommand(fallbackMethod="getFallbackSales2")
 	public String getSales(String parametro1, String parametro2) {
 		return salesClient.getRevenue(parametro1, parametro2); 
 	}
 	
-	public String getFallbackSales() {
+	public String getFallbackSales1(String parametro1) {
+		return "nullaSales"; 
+	}
+	public String getFallbackSales2(String parametro1, String parametro2) {
 		return "nullaSales"; 
 	}
 	
