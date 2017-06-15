@@ -19,7 +19,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 # Esecuzione sui nodi **docker-swarm** #
 
 1. Avviare la macchina virtuale **docker-swarm** che creerà a sua volta **swarm-1** **swarm-2** **swarm-3**
-2. Effettuare il RELOAD delle macchine con il comando ’$ vagrant reload’
+2. Effettuare il RELOAD delle macchine con il comando `$ vagrant reload`
 3. Collegarsi via ssh alla macchina virtuale **swarm-1** appena creata
 4. N.B. Si presuppone che le BUILD di tutti i progetti siano già state fatte, in quanto all'interno di queste macchine non è installato **Gradle**, se così non fosse compilarle esternamente da terminale
 5. N.B. I passi 6 e 7 vanno eseguiti solo la prima volta che si creano i nodi del **dosker-swarm**
