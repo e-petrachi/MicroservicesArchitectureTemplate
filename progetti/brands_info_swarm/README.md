@@ -8,7 +8,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 2. Collegarsi via ssh alla macchina virtuale appena creata
 3. Da dentro la macchina spostarsi nella directory **brands_info_swarm**
 
-      `$ sh avvio-su-docker.sh`
+4. Avviare i passi sotto col lo script `$ sh avvio-su-docker.sh`
 >4. Eseguire il BUILD di tutti i progetti con lo script **build-all-project.sh**
 >5. Eseguire il BUILD di tutte le immagini con lo script **build-all-images.sh**
 >6. Avviare i CONTAINER con lo script **z-run-all-containers.sh** o con **z-run-multiple-containers.sh**
@@ -29,7 +29,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
     10.11.1.71:2377`
 8. Ritornare alla macchina **swarm-1** e spostarsi nella directory **brands_info_swarm**
 
-      `$ sh avvio-su-docker-swarm.sh`
+9. Avviare i passi sotto col lo script `$ sh avvio-su-docker-swarm.sh`
 >9. Eseguire il BUILD di tutte le immagini con lo script **build-all-images-swarm.sh**
 >10. Avviare il REGISTRY con lo script **start-docker-registry.sh**
 >11. Spingere le immagini al registry con lo script **push-all-images-swarm.sh**
