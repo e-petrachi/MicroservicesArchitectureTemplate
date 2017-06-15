@@ -39,7 +39,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 
 6. Ritornare alla macchina **swarm-1** e spostarsi nella directory **brands_info_swarm**
 
-7. Avviare REGISTRY e STACK col lo script `$ sh avvio-su-docker-swarm.sh` oppure manualmente eseguendo i passi 8, 9, 10 e 10
+7. Avviare REGISTRY e STACK col lo script `$ sh avvio-su-docker-swarm.sh` oppure manualmente eseguendo i passi 8, 9, 10 e 11
 >>8. Eseguire il build delle immagini con lo script **build-all-images-swarm.sh**
 >>9. Avviare il REGISTRY con lo script **start-docker-registry.sh**
 >>10. Spingere le immagini al registry con lo script **push-all-images-swarm.sh**
