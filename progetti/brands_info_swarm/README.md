@@ -4,7 +4,7 @@ Applicazione multi-servizi e multi-contenitore rilasciata sullo swarm docker swa
 
 Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 
-# Esecuzione sul nodo **docker** #
+## Esecuzione sul nodo **docker** ##
 
 1. Avviare la macchina virtuale **docker**
 2. Collegarsi via ssh alla macchina virtuale appena creata
@@ -18,7 +18,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 8. Attendere qualche minuto e collegarsi via browser all'indirizzo [http://localhost:9003](http://localhost:9003/)
 99. Stoppare l'esecuzione dei container con, rispettivamente, lo script **stop-all-container.sh** oppure **stop-multiple-containers.sh**
 
-# Esecuzione sui nodi **docker-swarm** #
+## Esecuzione sui nodi **docker-swarm** ##
 
 1. Avviare la macchina virtuale **docker-swarm** che creerà a sua volta **swarm-1** **swarm-2** **swarm-3**
 2. Effettuare il reload delle macchine con il comando `$ vagrant reload`
