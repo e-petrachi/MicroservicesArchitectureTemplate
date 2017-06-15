@@ -1,5 +1,5 @@
 ########################################################
-# Dockerfile per l'applicazione brands-sales-9003 
+# Dockerfile per l'applicazione brands-sales-9003
 ########################################################
 
 FROM frolvlad/alpine-oraclejdk8

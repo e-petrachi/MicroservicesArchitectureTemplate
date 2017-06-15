@@ -15,5 +15,5 @@ eureka:
     metadataMap: 
       instanceId: ${spring.application.name}:${random.value}
 server: 
-  port: ${PORT:${SERVER_PORT:0}}
-#  port: 8080
+# port: ${PORT:${SERVER_PORT:0}}
+  port: 8080

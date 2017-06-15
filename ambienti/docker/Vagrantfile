@@ -47,9 +47,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         # node.ssh.forward_x11 = true
 
 		    # 8080 -> 8081 per evitare conflitti sulla porta 8080 con altre vm
-        node.vm.network "forwarded_port", guest: 8080, host: 8087, id: 'http1', host_ip: "localhost", auto_correct: true
-        node.vm.network "forwarded_port", guest: 8761, host: 8086, id: 'http2', host_ip: "localhost", auto_correct: true
-        node.vm.network "forwarded_port", guest: 8010, host: 8085, id: 'http3', host_ip: "localhost", auto_correct: true
+        node.vm.network "forwarded_port", guest: 8080, host: 8081, id: 'http1', host_ip: "localhost", auto_correct: true
+        node.vm.network "forwarded_port", guest: 8761, host: 8761, id: 'http2', host_ip: "localhost", auto_correct: true
+        node.vm.network "forwarded_port", guest: 9003, host: 9003, id: 'http3', host_ip: "localhost", auto_correct: true
+        node.vm.network "forwarded_port", guest: 5000, host: 5000, id: 'http4', host_ip: "localhost", auto_correct: true
 
         # provisioning con bash
         node.vm.provision :shell, :inline => 'apt-get update'

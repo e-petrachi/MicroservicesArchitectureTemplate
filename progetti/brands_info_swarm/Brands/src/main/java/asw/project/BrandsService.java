@@ -23,7 +23,7 @@ public class BrandsService {
 	} 
 	
 	public String getFallbackFamous(String parametro1) {
-		return "nullaFamous"; 
+		return "nullFamous"; 
 	}
 	
 	@HystrixCommand(fallbackMethod="getFallbackSales1")
@@ -31,16 +31,17 @@ public class BrandsService {
 		return salesClient.getRevenue(parametro1); 
 	}
 	
+	public String getFallbackSales1(String parametro1) {
+		return "nullSales"; 
+	}
+
 	@HystrixCommand(fallbackMethod="getFallbackSales2")
 	public String getSales(String parametro1, String parametro2) {
 		return salesClient.getRevenue(parametro1, parametro2); 
 	}
 	
-	public String getFallbackSales1(String parametro1) {
-		return "nullaSales"; 
-	}
 	public String getFallbackSales2(String parametro1, String parametro2) {
-		return "nullaSales"; 
+		return "nullSales"; 
 	}
 	
 }

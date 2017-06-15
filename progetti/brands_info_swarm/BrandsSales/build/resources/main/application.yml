@@ -1,19 +1,19 @@
-# application.yml 
---- 
-spring: 
-  application: 
+# application.yml
+---
+spring:
+  application:
     name: brands-sales
-eureka: 
-  client: 
-    serviceUrl: 
-      defaultZone: http://localhost:8761/eureka/
-#     defaultZone: http://eureka:8761/eureka/
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+     defaultZone: http://eureka:8761/eureka/
 # leave eureka.instance.leaseRenewalIntervalInSeconds unchanged in production
 # just here to provide quicker updates to Eureka for demos
-  instance: 
+  instance:
     leaseRenewalIntervalInSeconds: 5
-    metadataMap: 
+    metadataMap:
       instanceId: ${spring.application.name}:${random.value}
-server: 
-  port: ${PORT:${SERVER_PORT:0}}
-#  port: 8080
+server:
+# port: ${PORT:${SERVER_PORT:0}}
+  port: 8080

@@ -13,4 +13,4 @@ eureka:
   instance: 
     leaseRenewalIntervalInSeconds: 10
 server:
-  port: 8090
+  port: 8080
