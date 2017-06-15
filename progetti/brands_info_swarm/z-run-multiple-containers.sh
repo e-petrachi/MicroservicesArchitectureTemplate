@@ -13,4 +13,4 @@ docker run -d --network=eureka-net --name=brands-sales-1 brands-sales-9003
 docker run -d --network=eureka-net --name=brands-1 brands-9003
 docker run -d --network=eureka-net --name=brands-2 brands-9003
 
-docker run -d --network=eureka-net -p 8080:8080 --name=zuul zuul-9003 
+docker run -d --network=eureka-net -p 9003:8080 --name=zuul zuul-9003 
