@@ -35,7 +35,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 
 4. N.B. Si presuppone che il build di tutti i progetti sia già stato fatto, in quanto all'interno di queste macchine non è installato **Gradle**, se così non fosse, effettuarlo esternamente da terminale
 
-5. Configuare i nodi di **docker-swarm** con lo script `$ sh shared/scripts/setup-swarm.sh` N.B. Questo va fatto solo la prima volta che si creano i nodi del **dosker-swarm**
+5. Configuare i nodi di **docker-swarm** con lo script `$ sh shared/scripts/setup-swarm.sh` N.B. Questo va fatto solo la prima volta che si creano i nodi del **docker-swarm**
 
 6. Ritornare alla macchina **swarm-1** e spostarsi nella directory **brands_info_swarm**
 
