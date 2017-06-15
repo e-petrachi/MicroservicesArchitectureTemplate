@@ -13,7 +13,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 >6. Eseguire il BUILD di tutte le immagini con lo script **build-all-images.sh**
 >7. Avviare i CONTAINER con lo script **run-all-containers.sh** o con **run-multiple-containers.sh**
 
-8. Attendere qualche minuto e collegarsi via browser all'indirizzo `http://localhost:9003`
+8. Attendere qualche minuto e collegarsi via browser all'indirizzo [http://localhost:9003](http://localhost:9003/)
 99. Stoppare l'esecuzione dei container con, rispettivamente, lo script **stop-all-container.sh** oppure **stop-multiple-containers.sh**
 
 # Esecuzione sui nodi **docker-swarm** #
@@ -33,5 +33,5 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 >12. Spingere le immagini al registry con lo script **push-all-images-swarm.sh**
 >13. Avviare lo STACK con lo script **start-brands-stack.sh**
 
-14. Attendere un paio di minuti e collegarsi via browser all'indirizzo `http://localhost:8081`
+14. Attendere un paio di minuti e collegarsi via browser all'indirizzo [http://localhost:8081](http://localhost:8081/)
 99. Stoppare l'esecuzione dello STACK con lo script **stop-brands-stack.sh**
