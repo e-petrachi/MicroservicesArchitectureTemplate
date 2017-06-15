@@ -24,9 +24,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 4. N.B. Si presuppone che le BUILD di tutti i progetti siano già state fatte, in quanto all'interno di queste macchine non è installato **Gradle**, se così non fosse compilarle esternamente da terminale
 5. Configuare i nodi di **docker-swarm** con lo script `$ sh shared/scripts/setup-swarm.sh` oppure manualmente eseguendo i passi 6 e 7 N.B. Questo va fatto solo la prima volta che si creano i nodi del **dosker-swarm**
 >6. Rendere la macchina **swarm-1** il manager con il comando `$ docker swarm init --advertise-addr 10.11.1.71`
->7. Verrà dato in output una serie di comandi il primo del quale dovra essere eseguito sulla stessa macchina e cioè del tipo `$ docker swarm join-token worker` mentre gli altri dovranno essere eseguiti sulle altre macchine **swarm-2** e **swarm-3** collegandosi ad esse via ssh e, nello specifico, sarà del tipo `$ docker swarm join \
-    --token SWMTKN-1-2naklwnaijed1ytyybs5mpsnxpnzrdo8vgk6th4fmtf5gzivy4-24pfqjyz6o8qjy1xi7cew1ei3 \
-    10.11.1.71:2377`
+>7. Verrà dato in output una serie di comandi il primo del quale dovra essere eseguito sulla stessa macchina e cioè del tipo `$ docker swarm join-token worker` mentre gli altri dovranno essere eseguiti sulle altre macchine **swarm-2** e **swarm-3** collegandosi ad esse via ssh e, nello specifico, sarà del tipo `$ docker swarm join --token SWMTKN-1-2.. 10.11.1.71:2377`
 8. Ritornare alla macchina **swarm-1** e spostarsi nella directory **brands_info_swarm**
 
 9. Avviare i passi sotto col lo script `$ sh avvio-su-docker-swarm.sh` oppure manualmente eseguendo i passi 10, 11, 12 e 13
