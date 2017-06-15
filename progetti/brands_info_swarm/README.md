@@ -7,12 +7,12 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 1. Avviare la macchina virtuale **docker**
 2. Collegarsi via ssh alla macchina virtuale appena creata
 3. Da dentro la macchina spostarsi nella directory **brands_info_swarm**
----------------------------------
->      `$ sh avvio-su-docker.sh`
->>4. Eseguire il BUILD di tutti i progetti con lo script **build-all-project.sh**
->>5. Eseguire il BUILD di tutte le immagini con lo script **build-all-images.sh**
->>6. Avviare i CONTAINER con lo script **z-run-all-containers.sh** o con **z-run-multiple-containers.sh**
------------------------------------
+
+      `$ sh avvio-su-docker.sh`
+>4. Eseguire il BUILD di tutti i progetti con lo script **build-all-project.sh**
+>5. Eseguire il BUILD di tutte le immagini con lo script **build-all-images.sh**
+>6. Avviare i CONTAINER con lo script **z-run-all-containers.sh** o con **z-run-multiple-containers.sh**
+
 7. Attendere qualche minuto e collegarsi via browser all'indirizzo `http://localhost:9003`
 99. Stoppare l'esecuzione dei container con, rispettivamente, lo script **z-stop-all-container.sh** oppure **z-stop-multiple-containers.sh**
 
@@ -28,12 +28,12 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
     --token SWMTKN-1-2naklwnaijed1ytyybs5mpsnxpnzrdo8vgk6th4fmtf5gzivy4-24pfqjyz6o8qjy1xi7cew1ei3 \
     10.11.1.71:2377`
 8. Ritornare alla macchina **swarm-1** e spostarsi nella directory **brands_info_swarm**
----------------------------------
->      `$ sh avvio-su-docker-swarm.sh`
->>9. Eseguire il BUILD di tutte le immagini con lo script **build-all-images-swarm.sh**
->>10. Avviare il REGISTRY con lo script **start-docker-registry.sh**
->>11. Spingere le immagini al registry con lo script **push-all-images-swarm.sh**
->>12. Avviare lo STACK con lo script **start-brands-stack.sh**
--------------------------------------
+
+      `$ sh avvio-su-docker-swarm.sh`
+>9. Eseguire il BUILD di tutte le immagini con lo script **build-all-images-swarm.sh**
+>10. Avviare il REGISTRY con lo script **start-docker-registry.sh**
+>11. Spingere le immagini al registry con lo script **push-all-images-swarm.sh**
+>12. Avviare lo STACK con lo script **start-brands-stack.sh**
+
 13. Attendere un paio di minuti e collegarsi via browser all'indirizzo `http://localhost:8081`
 99. Stoppare l'esecuzione dello STACK con lo script **stop-brands-stack.sh**
