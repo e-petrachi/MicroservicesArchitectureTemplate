@@ -10,7 +10,7 @@ services:
       placement:
         constraints: [node.role == manager]
   brands-sales:
-      image: localhost:5000/brands-sales-9003
+    image: localhost:5000/brands-sales-9003
 #    image: swarm.inf.uniroma3.it:5000/brands-sales-9003
 #    ports:
 #    - "8080"
@@ -20,7 +20,7 @@ services:
       mode: replicated
       replicas: 1
   brands-famous:
-     image: localhost:5000/brands-famous-9003
+    image: localhost:5000/brands-famous-9003
 #    image: swarm.inf.uniroma3.it:5000/brands-famous-9003
 #    ports:
 #    - "8080"
@@ -46,4 +46,5 @@ services:
     depends_on:
     - "eureka"
     ports:
-    - "9003:8080"
+    - "8080:8080"
+#    - "9003:8080"
