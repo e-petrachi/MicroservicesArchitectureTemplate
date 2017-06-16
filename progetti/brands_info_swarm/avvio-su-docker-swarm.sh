@@ -3,16 +3,16 @@
 echo ""
 echo "-------- Build delle immagini sullo swarm --------"
 echo ""
-sh build-all-images-swarm.sh
+sh scripts/build-all-images-docker-swarm.sh
 echo ""
 echo "-------- Avvio del registro sullo swarm --------"
 echo ""
-sh start-docker-registry.sh
+sh scripts/start-docker-registry.sh
 echo ""
 echo "-------- Push delle immagini sul registro --------"
 echo ""
-sh push-all-images-swarm.sh
+sh scripts/push-all-images-docker-swarm.sh
 echo ""
 echo "-------- Start dello stack sullo swarm --------"
 echo ""
-sh start-brands-stack.sh
+sh scripts/start-brands-stack.sh

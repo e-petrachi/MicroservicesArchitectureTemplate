@@ -14,7 +14,7 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 
 3. Da dentro la macchina spostarsi nella directory **brands_info_swarm**
 
-4. Avviare i passi sotto col lo script `$ sh avvio-su-docker.sh` oppure manualmente eseguendo i passi 5, 6 e 7
+4. Avviare i passi sotto col lo script `$ sh avvio-su-docker.sh` o con `$ sh avvio-su-docker-multiple.sh` oppure manualmente eseguendo i passi seguenti:
 >>5. Eseguire il BUILD di tutti i progetti con lo script **build-all-project.sh**
 >>6. Eseguire il BUILD di tutte le immagini con lo script **build-all-images.sh**
 >>7. Avviare i CONTAINER con lo script **run-all-containers.sh** o con **run-multiple-containers.sh**
@@ -39,12 +39,32 @@ Questa applicazione è accessibile al link http://swarm.inf.uniroma3.it:9003/
 
 6. Ritornare alla macchina **swarm-1** e spostarsi nella directory **brands_info_swarm**
 
-7. Avviare REGISTRY e STACK col lo script `$ sh avvio-su-docker-swarm.sh` oppure manualmente eseguendo i passi 8, 9, 10 e 11
->>8. Eseguire il build delle immagini con lo script **build-all-images-swarm.sh**
+7. Avviare REGISTRY e STACK col lo script `$ sh avvio-su-docker-swarm.sh` oppure manualmente eseguendo i passi seguenti:
+>>8. Eseguire il build delle immagini con lo script **build-all-images-docker-swarm.sh**
 >>9. Avviare il REGISTRY con lo script **start-docker-registry.sh**
->>10. Spingere le immagini al registry con lo script **push-all-images-swarm.sh**
+>>10. Spingere le immagini al registry con lo script **push-all-images-docker-swarm.sh**
 >>11. Avviare lo STACK con lo script **start-brands-stack.sh**
 
 12. Attendere un paio di minuti e collegarsi via browser all'indirizzo [http://localhost:9003](http://localhost:9003/)
 
 99. Stoppare l'esecuzione dello STACK con lo script **stop-brands-stack.sh**
+
+-----------------
+
+### Esecuzione sullo **swarm.inf.uniroma3.it** ###
+
+1. Avviare la macchina virtuale **docker** che si registrerà come client dello **swarm.inf.uniroma3.it**
+
+2. Collegarsi via ssh alla macchina virtuale **docker** appena avviata
+
+3. Da dentro la macchina spostarsi nella directory **brands_info_swarm**
+
+4. Compilare i progetti e le immagini, fare il push e avviare lo STACK col lo script `$ sh avvio-su-swarm.sh` oppure manualmente eseguendo i passi seguenti:
+>>5. Eseguire il build dei progetti con lo script **build-all-projects.sh**
+>>6. Eseguire il build delle immagini con lo script **build-all-images-swarm.sh**
+>>7. Spingere le immagini nel registry con lo script **push-all-images-swarm.sh**
+>>8. Avviare lo STACK con lo script **start-brands-stack-swarm.sh**
+
+9. Attendere un paio di minuti e collegarsi via browser all'indirizzo [http://swarm.inf.uniroma3.it:9003/](http://swarm.inf.uniroma3.it:9003/)
+
+99. Stoppare l'esecuzione dello STACK con lo script **stop-brands-stack-swarm.sh**

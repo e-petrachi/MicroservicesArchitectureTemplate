@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# source "docker.env"
+source "docker.env"
 
-DOCKER_REGISTRY=localhost:5000
-# DOCKER_REGISTRY=swarm.inf.uniroma3.it:5000
+DOCKER_REGISTRY=swarm.inf.uniroma3.it:5000
 
 docker push ${DOCKER_REGISTRY}/eureka-9003
 docker push ${DOCKER_REGISTRY}/brands-sales-9003
