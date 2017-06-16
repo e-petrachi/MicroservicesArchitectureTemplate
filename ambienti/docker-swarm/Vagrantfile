@@ -47,9 +47,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			# node.ssh.forward_x11 = true
 
 			# 8080 -> 808i per evitare conflitti sulla porta 8080 con altre vm (e.g., developer)
-			node.vm.network "forwarded_port", guest: 8080, host: "#{8080+i}", id: 'http1', auto_correct: true
-      # node.vm.network "forwarded_port", guest: 9003, host: "#{9003+i}", id: 'http2', auto_correct: true
-
+			node.vm.network "forwarded_port", guest: 9003, host: "#{9002+i}", id: 'http', auto_correct: true
+      
 			# installa docker e docker compose
 			node.vm.provision :shell, path: "../shared/scripts/setup-docker.sh"
 			node.vm.provision :shell, path: "../shared/scripts/setup-docker-compose.sh"
