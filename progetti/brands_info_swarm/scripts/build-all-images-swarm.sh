@@ -1,6 +1,10 @@
 #!/bin/bash
 
-source "docker.env"
+#source 'docker.env'
+
+export DOCKER_HOST=tcp://swarm.inf.uniroma3.it:2376
+export DOCKER_CERT_PATH=../swarm.inf.uniroma3.it/resources/certs
+export DOCKER_TLS_VERIFY=1
 
 DOCKER_REGISTRY=swarm.inf.uniroma3.it:5000
 
