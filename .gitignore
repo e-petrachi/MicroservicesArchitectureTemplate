@@ -19,3 +19,6 @@ Thumbs.db
 Desktop.ini
 .svn
 *.pem
+*.lock
+*.bin
+*.original
